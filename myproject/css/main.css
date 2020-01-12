@@ -40,35 +40,48 @@ header {
 nav ul {
   display: flex;
   align-items: center; }
-  nav ul li {
-    display: inline-block;
-    margin-left: 21px; }
-  nav ul a {
-    font-family: Poppins-Medium, sans-serif;
-    font-size: 14px;
-    color: #000; }
+nav li {
+  display: inline-block;
+  margin-left: 21px; }
+nav li:hover {
+  position: relative; }
+  nav li:hover::before {
+    content: '';
+    display: block;
+    background-image: linear-gradient(90deg, #fc5f45, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom: -3px; }
+nav a {
+  font-family: Poppins-Medium, sans-serif;
+  font-size: 14px;
+  color: #000; }
 
 @media screen and (max-width: 800px) {
   nav {
     position: absolute;
     top: -200px; }
+    nav li {
+      display: block;
+      margin: 0 10px 10px 21px;
+      box-sizing: border-box; }
 
   header svg {
     display: inline-block; }
 
-  li {
-    margin: 0 10px 10px 21px; } }
-.nav-column {
-  display: inline-block;
-  position: absolute;
-  left: 234px;
-  top: 75px;
-  transition-duration: .5s;
-  max-width: 234px; }
-  .nav-column ul {
+  .nav-column {
     display: block;
-    background-color: #fff; }
-
+    right: 0;
+    top: 75px;
+    transition-duration: .5s; }
+    .nav-column ul {
+      display: block;
+      background-color: #fff;
+      width: 124px;
+      height: 230px; } }
 .home {
   background: url(../media/home/bg-home.jpg) center/cover no-repeat;
   background-color: rgba(63, 64, 73, 0.85);
@@ -152,7 +165,7 @@ nav ul {
     left: 1%; }
   @media screen and (max-width: 700px) {
     .about .image {
-      width: 100%; } }
+      display: none; } }
   .about .image::before {
     content: '';
     display: block;

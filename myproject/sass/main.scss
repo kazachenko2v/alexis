@@ -67,7 +67,7 @@ a {
 }
 @media screen and (max-width: 500px) {
     @mixin numbers {
-        font-size: 255px;
+        font-size: 245px;
     }
 }
 
@@ -118,46 +118,54 @@ nav {
     ul {
         display: flex;
         align-items: center;
-        li {
-            display: inline-block;
-            margin-left: 21px;
-        }
-        a {
-            font-family: Poppins-Medium, sans-serif;
-            font-size: 14px;
-            color: #000;
-        }
     } 
+    li {
+        display: inline-block;
+        margin-left: 21px;
+    }
+    li:hover {
+        position: relative;
+        &::before {
+        @include color-bottom-border;
+        bottom: -3px;
+        }
+    }
+    a {
+        font-family: Poppins-Medium, sans-serif;
+        font-size: 14px;
+        color: #000;
+    }
 }
 
 @media screen and (max-width: 800px) {
     nav {
         position: absolute;
         top: -200px;
+        li {
+            display: block;
+            margin: 0 10px 10px 21px;
+            box-sizing: border-box;
+        }
     }
     header {
         svg {
             display: inline-block;       
         }
     }
-    li {
-        margin: 0 10px 10px 21px;
+    .nav-column {
+        display: block;
+        right: 0;
+        top: 75px;
+        transition-duration: .5s;
+        ul {
+            display: block;
+            background-color: #fff;
+            width: 124px;
+            height: 230px;
+        }
     }
 }
 
-.nav-column {
-    display: inline-block;
-    position: absolute;
-    left: 234px;;
-    top: 75px;
-    transition-duration: .5s;
-    max-width: 234px;
-    ul {
-        display: block;
-        background-color: #fff;
-    }
-    
-}
 
 // home
 
@@ -255,7 +263,7 @@ nav {
     }
     @media screen and (max-width: 700px) {
         .image {
-            width: 100%;
+            display: none;
         }
     }
     .image::before {
