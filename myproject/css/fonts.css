@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'LibreBaskerville-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/LibreBaskerville-Bold/LibreBaskerville-Bold.ttf"),
+    url("../fonts/LibreBaskerville-Bold/LibreBaskerville-Bold.otf"),
+    url("../fonts/LibreBaskerville-Bold/LibreBaskerville-Bold.woff"),
+    url("../fonts/LibreBaskerville-Bold/LibreBaskerville-Bold.woff2");
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/LibreBaskerville-Regular/LibreBaskerville-Regular.ttf"),
+    url("../fonts/LibreBaskerville-Regular/LibreBaskerville-Regular.otf"),
+    url("../fonts/LibreBaskerville-Regular/LibreBaskerville-Regular.woff"),
+    url("../fonts/LibreBaskerville-Regular/LibreBaskerville-Regular.woff2");
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Poppins-Medium/Poppins-Medium.ttf'),
+    url("../fonts/Poppins-Medium/Poppins-Medium.otf"),
+    url("../fonts/Poppins-Medium/Poppins-Medium.woff"),
+    url("../fonts/Poppins-Medium/Poppins-Medium.woff2");
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Poppins-Regular/Poppins-Regular.ttf'),
+    url("../fonts/Poppins-Regular/Poppins-Regular.otf"),
+    url("../fonts/Poppins-Regular/Poppins-Regular.woff"),
+    url("../fonts/Poppins-Regular/Poppins-Regular.woff2");
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Poppins-SemiBold/Poppins-SemiBold.ttf'),
+    url("../fonts/Poppins-SemiBold/Poppins-SemiBold.otf"),
+    url("../fonts/Poppins-SemiBold/Poppins-SemiBold.woff"),
+    url("../fonts/Poppins-SemiBold/Poppins-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Poppins-Bold/Poppins-Bold.ttf'),
+    url("../fonts/Poppins-Bold/Poppins-Bold.otf"),
+    url("../fonts/Poppins-Bold/Poppins-Bold.woff"),
+    url("../fonts/Poppins-Bold/Poppins-Bold.woff2");
+}
+
+@font-face {
+    font-family: 'Sacramento-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Sacramento-Regular/Sacramento-Regular.ttf'),
+    url("../fonts/Sacramento-Regular/Sacramento-Regular.otf"),
+    url("../fonts/Sacramento-Regular/Sacramento-Regular.woff"),
+    url("../fonts/Sacramento-Regular/Sacramento-Regular.woff2");
+}
+
+@font-face {
+    font-family: 'WisdomScript';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Wisdom-Script/WisdomScript-Regular.ttf'),
+    url("../fonts/Wisdom-Script/WisdomScript-Regular.otf");
+}
+
