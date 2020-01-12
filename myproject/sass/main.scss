@@ -173,6 +173,11 @@ nav {
     background-color: rgba(63, 64, 73, .85);
     background-blend-mode: overlay;
     padding: 162px 0 174px 0;
+    @media screen and (max-width: 1000px) {
+        .home {
+            padding: 81px 0 75px 0;
+        }
+    }
     .container {
         text-align: center;
         padding: 0 110px;
@@ -205,6 +210,11 @@ nav {
         .features2 {
             color: #8463b2;
             margin: 0 23px
+        }
+        @media screen and (max-width: 1000px) {
+            .features2 {
+                margin: 0;
+            }
         }
         .features3 {
             color: #feb960;
