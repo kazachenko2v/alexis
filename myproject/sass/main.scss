@@ -132,7 +132,8 @@ nav {
 
 @media screen and (max-width: 800px) {
     nav {
-        display: none;    
+        position: absolute;
+        top: -200px;
     }
     header {
         svg {
@@ -147,12 +148,12 @@ nav {
 .nav-column {
     display: inline-block;
     position: absolute;
-    left: 80%;
+    left: 234px;;
     top: 75px;
+    transition-duration: .5s;
+    max-width: 234px;
     ul {
         display: block;
-        position: absolute;
-        left: 0;
         background-color: #fff;
     }
     

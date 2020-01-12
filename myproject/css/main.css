@@ -50,7 +50,8 @@ nav ul {
 
 @media screen and (max-width: 800px) {
   nav {
-    display: none; }
+    position: absolute;
+    top: -200px; }
 
   header svg {
     display: inline-block; }
@@ -60,12 +61,12 @@ nav ul {
 .nav-column {
   display: inline-block;
   position: absolute;
-  left: 80%;
-  top: 75px; }
+  left: 234px;
+  top: 75px;
+  transition-duration: .5s;
+  max-width: 234px; }
   .nav-column ul {
     display: block;
-    position: absolute;
-    left: 0;
     background-color: #fff; }
 
 .home {
