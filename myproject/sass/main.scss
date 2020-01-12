@@ -173,11 +173,6 @@ nav {
     background-color: rgba(63, 64, 73, .85);
     background-blend-mode: overlay;
     padding: 162px 0 174px 0;
-    @media screen and (max-width: 1000px) {
-        .home {
-            padding: 81px 0 75px 0;
-        }
-    }
     .container {
         text-align: center;
         padding: 0 110px;
@@ -186,6 +181,14 @@ nav {
             font-size: 60px;
             color: #fff;
             line-height: 85px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .home {
+            padding: 81px 0 75px 0;
+        }
+        .container {
+            padding: 0 55px;
         }
     }
     a {
