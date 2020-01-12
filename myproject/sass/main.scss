@@ -140,7 +140,7 @@ nav {
 @media screen and (max-width: 800px) {
     nav {
         position: absolute;
-        top: -200px;
+        top: -300px;
         ul {
             display: block;
             background-color: #fff;
@@ -160,6 +160,7 @@ nav {
     }
     .nav-column {
         top: 75px;
+        right: 0;
         transition-duration: .5s;
     }
 }

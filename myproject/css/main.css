@@ -63,7 +63,7 @@ nav a {
 @media screen and (max-width: 800px) {
   nav {
     position: absolute;
-    top: -200px; }
+    top: -300px; }
     nav ul {
       display: block;
       background-color: #fff;
@@ -79,6 +79,7 @@ nav a {
 
   .nav-column {
     top: 75px;
+    right: 0;
     transition-duration: .5s; } }
 .home {
   background: url(../media/home/bg-home.jpg) center/cover no-repeat;
