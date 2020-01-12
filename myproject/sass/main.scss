@@ -141,6 +141,12 @@ nav {
     nav {
         position: absolute;
         top: -200px;
+        ul {
+            display: block;
+            background-color: #fff;
+            width: 124px;
+            height: 230px;
+        }
         li {
             display: block;
             margin: 0 10px 10px 21px;
@@ -153,16 +159,8 @@ nav {
         }
     }
     .nav-column {
-        display: block;
-        right: 0;
         top: 75px;
         transition-duration: .5s;
-        ul {
-            display: block;
-            background-color: #fff;
-            width: 124px;
-            height: 230px;
-        }
     }
 }
 

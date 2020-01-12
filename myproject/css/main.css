@@ -64,6 +64,11 @@ nav a {
   nav {
     position: absolute;
     top: -200px; }
+    nav ul {
+      display: block;
+      background-color: #fff;
+      width: 124px;
+      height: 230px; }
     nav li {
       display: block;
       margin: 0 10px 10px 21px;
@@ -73,15 +78,8 @@ nav a {
     display: inline-block; }
 
   .nav-column {
-    display: block;
-    right: 0;
     top: 75px;
-    transition-duration: .5s; }
-    .nav-column ul {
-      display: block;
-      background-color: #fff;
-      width: 124px;
-      height: 230px; } }
+    transition-duration: .5s; } }
 .home {
   background: url(../media/home/bg-home.jpg) center/cover no-repeat;
   background-color: rgba(63, 64, 73, 0.85);
