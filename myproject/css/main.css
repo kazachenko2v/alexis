@@ -321,6 +321,9 @@ nav a {
     .services .slider-services {
       width: 293px;
       margin: 0 auto; } }
+  @media screen and (max-width: 370px) {
+    .services .slider-services {
+      width: 253px; } }
 
 .video {
   background-color: #3f4049;
@@ -349,6 +352,12 @@ nav a {
     width: 394px;
     top: -89%;
     left: -164%; }
+  @media screen and (max-width: 500px) {
+    .video .play_button::before {
+      color: #fff;
+      width: 390px;
+      top: -120%;
+      left: -159%; } }
   .video .play_button::after {
     content: 'Click to play the video';
     position: absolute;
@@ -540,6 +549,15 @@ nav a {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+    @media screen and (max-width: 1100px) {
+      .team .details .flex-contaitner {
+        display: block; }
+      .team .details p {
+        max-width: 100%;
+        display: block; } }
+  @media screen and (max-width: 586px) {
+    .team .details {
+      padding: 15px; } }
   .team ul {
     display: inline-block;
     border-left: solid 2px #efefef;
@@ -567,6 +585,17 @@ nav a {
     position: absolute;
     top: 40%;
     left: -72px; }
+  @media screen and (max-width: 1100px) {
+    .team ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-left: none;
+      padding: 0;
+      margin-top: 20px; }
+    .team ul::before {
+      display: none; } }
 
 .slider_members {
   width: 1170px;
@@ -639,6 +668,9 @@ nav a {
   @media screen and (max-width: 586px) {
     .slider_members {
       width: 293px; } }
+  @media screen and (max-width: 370px) {
+    .slider_members {
+      width: 253px; } }
 
 @media screen and (max-width: 800px) {
   .section-team {
