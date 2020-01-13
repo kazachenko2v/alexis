@@ -1499,6 +1499,7 @@ nav {
     }
     @media screen and (max-width: 1200px) {
         .grid-container {
+            grid-template-rows: 240px 10px 240px 10px 240px;
             grid-template-columns: 1fr 1fr;
             column-gap: 10px;
         }
@@ -1596,7 +1597,7 @@ nav {
             color: #feb960;
         }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 950px) {
         .grid-container {
             display: block;
         }
