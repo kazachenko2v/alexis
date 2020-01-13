@@ -211,6 +211,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f6f6f6; }
+  @media screen and (max-width: 500px) {
+    .about .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .about .numbers {
+      font-size: 205px; } }
   .about h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -253,6 +259,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f0f0f0; }
+  @media screen and (max-width: 500px) {
+    .services .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .services .numbers {
+      font-size: 205px; } }
   .services h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -381,6 +393,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f6f6f6; }
+  @media screen and (max-width: 500px) {
+    .portfolio .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .portfolio .numbers {
+      font-size: 205px; } }
   .portfolio h3 {
     margin-bottom: 82px;
     position: relative;
@@ -483,6 +501,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f0f0f0; }
+  @media screen and (max-width: 500px) {
+    .team .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .team .numbers {
+      font-size: 205px; } }
   .team h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -677,6 +701,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f6f6f6; }
+  @media screen and (max-width: 500px) {
+    .worksteps .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .worksteps .numbers {
+      font-size: 205px; } }
   .worksteps h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -788,6 +818,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f0f0f0; }
+  @media screen and (max-width: 500px) {
+    .pricing .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .pricing .numbers {
+      font-size: 205px; } }
   .pricing h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -918,6 +954,12 @@ nav a {
     right: 0;
     color: #484951;
     opacity: .5; }
+  @media screen and (max-width: 500px) {
+    .testimonials .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .testimonials .numbers {
+      font-size: 205px; } }
   .testimonials h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -1034,6 +1076,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f6f6f6; }
+  @media screen and (max-width: 500px) {
+    .select .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .select .numbers {
+      font-size: 205px; } }
   .select h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -1119,6 +1167,12 @@ nav a {
     left: 0;
     right: 0;
     color: #f0f0f0; }
+  @media screen and (max-width: 500px) {
+    .blog .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .blog .numbers {
+      font-size: 205px; } }
   .blog h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;
@@ -1261,6 +1315,12 @@ nav a {
     left: 0;
     right: 0;
     color: #d2d2d2; }
+  @media screen and (max-width: 500px) {
+    .contact .numbers {
+      font-size: 245px; } }
+  @media screen and (max-width: 400px) {
+    .contact .numbers {
+      font-size: 205px; } }
   .contact h2 {
     font-family: LibreBaskerville-Bold, serif;
     font-size: 50px;

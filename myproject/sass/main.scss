@@ -65,11 +65,7 @@ a {
     left: 0;
     right: 0;
 }
-@media screen and (max-width: 500px) {
-    @mixin numbers {
-        font-size: 245px;
-    }
-}
+
 
 @mixin paragraph {
     font-family: Poppins-Regular, sans-serif;
@@ -308,6 +304,16 @@ nav {
         @include numbers;
         color: #f6f6f6;
     }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
+    }
     h2 {
         font-family: LibreBaskerville-Bold, serif;
         font-size: 50px;
@@ -352,6 +358,16 @@ nav {
     .numbers {
         @include numbers;
         color: #f0f0f0;
+    }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
     }
     @include section-header;
     h3 {
@@ -494,6 +510,16 @@ nav {
         @include numbers;
         color: #f6f6f6;
     }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
+    }
     h3 {
         margin-bottom: 82px;
         position: relative;
@@ -544,6 +570,7 @@ nav {
             background-color: #fff;
             visibility: hidden;
         }
+        
         h4 {
             margin-top: 25px;
         }
@@ -599,6 +626,16 @@ nav {
     .numbers {
         @include numbers;
         color: #f0f0f0;
+    }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
     }
     @include section-header;
     h3 {
@@ -822,6 +859,16 @@ nav {
         @include numbers;
         color: #f6f6f6;
     }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
+    }
     @include section-header;
     h3 {
         margin-bottom: 80px;
@@ -940,6 +987,16 @@ nav {
     .numbers {
         @include numbers;
         color: #f0f0f0;
+    }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
     }
     @include section-header;
     h3 {
@@ -1079,6 +1136,16 @@ nav {
         color: #484951;
         opacity: .5;
     }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
+    }
     @include section-header;
     h2, h3 {
         color: #fff;
@@ -1205,6 +1272,16 @@ nav {
         @include numbers;
         color: #f6f6f6;
     }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
+    }
     @include section-header;
     h3 {
         margin-bottom: 66px;
@@ -1286,6 +1363,16 @@ nav {
     .numbers {
         @include numbers;
         color: #f0f0f0;
+    }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
     }
     @include section-header;
     h3 {
@@ -1440,6 +1527,16 @@ nav {
     .numbers {
         @include numbers;
         color: #d2d2d2;
+    }
+    @media screen and (max-width: 500px) {
+        .numbers {
+            font-size: 245px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .numbers {
+            font-size: 205px;
+        }
     }
     @include section-header;
     h3 {
