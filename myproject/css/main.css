@@ -1464,7 +1464,6 @@ footer {
   background-color: #3f4049;
   text-transform: capitalize;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
   position: relative; }
@@ -1518,5 +1517,21 @@ footer {
   footer .cls-1 {
     fill: #fff;
     fill-rule: evenodd; }
+
+@media screen and (max-width: 1114px) {
+  footer {
+    justify-content: space-around; }
+    footer .flex-element, footer .logo {
+      padding: 62px 5px 57px;
+      flex-grow: 1;
+      flex-basis: 25%; } }
+@media screen and (max-width: 680px) {
+  footer {
+    flex-direction: column;
+    text-align: center; }
+    footer .logo {
+      padding: 40px 5px; }
+    footer .flex-element {
+      padding: 10px 5px; } }
 
 /*# sourceMappingURL=main.css.map */
