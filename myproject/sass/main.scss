@@ -890,6 +890,11 @@ nav {
         color: #bdbdbf;
         margin-bottom: 40px;
     }
+    @media screen and (max-width: 350px) {
+        span:last-of-type {
+            font-size: 13px;
+        }
+    }
 }
 
 // worksteps
@@ -926,11 +931,6 @@ nav {
             width: 556px;
             height: 300px;
             position: relative;
-        }
-        @media screen and (max-width: 600px) {
-            .image {
-                width: 100%;
-            }
         }
         .image::before {
             content: '';
@@ -1016,6 +1016,17 @@ nav {
         top: 7%;
         left: 17.5%;
     }
+    @media screen and (max-width: 600px) {
+        .flex-container {
+            padding: 0;
+        }
+        .image {
+            display: none;
+        }
+        .steps-content {
+            position: relative;
+        }
+    }
 }
 
 // pricing
@@ -1054,11 +1065,15 @@ nav {
             margin: 0 auto;
         }
     }
+    @media screen and (max-width: 500px) {
+        .slider-price {
+            width: 300px;
+        }
+    }
     .price-section {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        width: 360px;
         height: 575px;
         padding: 33px 88px 38px;
         margin: 0 15px;
@@ -1079,6 +1094,16 @@ nav {
         }
         span:last-of-type {
             margin-bottom: 36px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .price-section {
+            padding: 20px;
+        }
+    }
+    @media screen and (max-width: 370px) {
+        .price-section {
+            padding: 20px 0;
         }
     }
     .pricing-circle {
@@ -1127,6 +1152,12 @@ nav {
     a {
         @include button;
         padding: 16px 38px 14px;
+    }
+    @media screen and (max-width: 380px) {
+        a {
+            display: block;
+            padding: 16px 8px 14px;
+        }
     }
     .price-section1 {
         border-top: solid 3px #38c695;
@@ -1300,6 +1331,18 @@ nav {
             top: 50%;
             left: 50%;
             visibility: hidden;
+        }
+    }
+}
+@media screen and (max-width: 1250px) {
+    .slider_testimonials {
+        display: block;
+        .slider-for {
+            width: 384px;
+            margin: 0 auto;
+        }
+        .slider-nav {
+            width: 100%;
         }
     }
 }
