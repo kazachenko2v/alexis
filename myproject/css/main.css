@@ -431,15 +431,17 @@ nav a {
       left: 0;
       height: 100%;
       width: 100%;
+      z-index: -4;
       background-color: none; }
     .grid-container-portfolio .grid-element-portfolio img {
       height: 100%;
       width: 100%; }
     .grid-container-portfolio .grid-element-portfolio .plus {
       position: absolute;
-      top: -20px;
+      z-index: -5;
       width: 100%;
-      visibility: hidden; }
+      height: 85%;
+      top: 0; }
     .grid-container-portfolio .grid-element-portfolio svg {
       position: absolute;
       width: 60px;
@@ -458,23 +460,33 @@ nav a {
       visibility: hidden; }
     .grid-container-portfolio .grid-element-portfolio h4 {
       margin-top: 25px; }
+    @media screen and (max-width: 1100px) {
+      .grid-container-portfolio .grid-element-portfolio h4 {
+        margin-top: 10px; } }
+    @media screen and (max-width: 700px) {
+      .grid-container-portfolio .grid-element-portfolio h4 {
+        margin-top: 5px;
+        font-size: 13px; } }
+    @media screen and (max-width: 700px) {
+      .grid-container-portfolio .grid-element-portfolio h4 {
+        margin-top: 5px;
+        font-size: 10px; } }
   .grid-container-portfolio .grid-element-portfolio:hover {
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
     position: relative; }
-    .grid-container-portfolio .grid-element-portfolio:hover::after {
-      transition-duration: .5s;
-      background-color: rgba(0, 0, 0, 0.4); }
     .grid-container-portfolio .grid-element-portfolio:hover .plus {
-      position: absolute;
-      top: 70px;
       transition-duration: .5s;
-      visibility: visible;
-      z-index: 5; }
+      z-index: 5;
+      background-color: rgba(0, 0, 0, 0.5); }
     .grid-container-portfolio .grid-element-portfolio:hover svg {
-      position: absolute;
       width: 60px;
       height: 60px;
-      transform: translate(-50%, 10%); }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -30%); }
+    @media screen and (max-width: 700px) {
+      .grid-container-portfolio .grid-element-portfolio:hover svg {
+        transform: translate(-50%, -50%); } }
     .grid-container-portfolio .grid-element-portfolio:hover .paragraph {
       height: 21%;
       transition: .5s;
