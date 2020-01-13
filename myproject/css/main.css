@@ -331,6 +331,8 @@ nav a {
   height: 500px; }
   .video .container {
     text-align: center; }
+  .video h2 {
+    display: none; }
   .video video {
     width: 100%;
     height: 500px;
@@ -684,6 +686,8 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .stats .container h2 {
+      display: none; }
     .stats .container div {
       display: flex;
       flex-direction: column;
@@ -1274,11 +1278,11 @@ nav a {
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1); }
     .blog .grid-element div {
       margin-bottom: 18px; }
-    .blog .grid-element span {
+    .blog .grid-element span:first-of-type {
       font-family: Poppins-Medium, sans-serif;
       font-size: 15px;
       text-transform: uppercase; }
-    .blog .grid-element time {
+    .blog .grid-element span:last-of-type {
       font-family: Poppins-Regular, sans-serif;
       font-size: 13px;
       vertical-align: middle;
@@ -1309,9 +1313,9 @@ nav a {
       position: absolute;
       top: 89%;
       left: 9%; }
-    .blog .grid-element1 span {
+    .blog .grid-element1 span:first-of-type {
       color: #fc6046; }
-    .blog .grid-element1 time {
+    .blog .grid-element1 span:last-of-type {
       color: #fff; }
   .blog .grid-element2 {
     grid-column: 1/2;
@@ -1326,19 +1330,19 @@ nav a {
     grid-column: 2/3;
     grid-row: 1/2;
     border-bottom: solid 3px #38c695; }
-    .blog .grid-element3 span, .blog .grid-element3 a {
+    .blog .grid-element3 span:first-of-type, .blog .grid-element3 a {
       color: #38c695; }
   .blog .grid-element4 {
     grid-column: 2/3;
     grid-row: 3/4;
     border-bottom: solid 3px #b27cf5; }
-    .blog .grid-element4 span, .blog .grid-element4 a {
+    .blog .grid-element4 span:first-of-type, .blog .grid-element4 a {
       color: #b27cf5; }
   .blog .grid-element5 {
     grid-column: 2/3;
     grid-row: 5/6;
     border-bottom: solid 3px #feb960; }
-    .blog .grid-element5 span, .blog .grid-element5 a {
+    .blog .grid-element5 span:first-of-type, .blog .grid-element5 a {
       color: #feb960; }
   @media screen and (max-width: 950px) {
     .blog .grid-container {
