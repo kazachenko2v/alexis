@@ -269,6 +269,7 @@ nav {
     .container {
         position: relative;
         display: flex;
+        height: 700px;
         justify-content: flex-end;
         align-items: center;
     }
@@ -283,11 +284,6 @@ nav {
         box-shadow: inset 0 0 0 10px rgba($color: #000000, $alpha: .5);
         position: absolute;
         left: 1%;
-    }
-    @media screen and (max-width: 700px) {
-        .image {
-            display: none;
-        }
     }
     .image::before {
         content: '';
@@ -307,11 +303,6 @@ nav {
         background-color: #fff;
         position: relative;
         box-shadow: $shadow;
-    }
-    @media screen and (max-width: 600px) {
-        .about-text {
-            padding: 20px 20px;
-        }
     }
     .numbers {
         @include numbers;
@@ -334,9 +325,18 @@ nav {
         z-index: +1;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .about {
         padding: 50px 0 50px 0;
+        .container {
+            height: auto;
+        }
+        .image {
+            display: none;
+        }
+        .about-text {
+            padding: 20px 20px;
+        }
     }
 }
 
@@ -431,6 +431,11 @@ nav {
     height: 500px;
     .container {
         text-align: center;
+    }
+    video {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
     }
     .play_button {
         border: none;

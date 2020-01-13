@@ -164,6 +164,7 @@ nav a {
   .about .container {
     position: relative;
     display: flex;
+    height: 700px;
     justify-content: flex-end;
     align-items: center; }
   .about .image {
@@ -177,9 +178,6 @@ nav a {
     box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 1%; }
-  @media screen and (max-width: 700px) {
-    .about .image {
-      display: none; } }
   .about .image::before {
     content: '';
     display: block;
@@ -203,9 +201,6 @@ nav a {
     background-color: #fff;
     position: relative;
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1); }
-  @media screen and (max-width: 600px) {
-    .about .about-text {
-      padding: 20px 20px; } }
   .about .numbers {
     font-family: Poppins-Bold, sans-serif;
     font-size: 275px;
@@ -232,9 +227,15 @@ nav a {
     position: relative;
     z-index: +1; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .about {
-    padding: 50px 0 50px 0; } }
+    padding: 50px 0 50px 0; }
+    .about .container {
+      height: auto; }
+    .about .image {
+      display: none; }
+    .about .about-text {
+      padding: 20px 20px; } }
 .services {
   background-color: #f7f7f7;
   padding: 145px 0 150px;
@@ -315,6 +316,10 @@ nav a {
   height: 500px; }
   .video .container {
     text-align: center; }
+  .video video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; }
   .video .play_button {
     border: none;
     background-color: transparent;
