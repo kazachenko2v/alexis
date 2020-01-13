@@ -94,11 +94,16 @@ nav a {
       font-size: 60px;
       color: #fff;
       line-height: 85px; }
+    @media screen and (max-width: 1000px) {
+      .home .container h2 {
+        font-size: 40px;
+        line-height: 55px; } }
   @media screen and (max-width: 1000px) {
-    .home .home {
-      padding: 81px 0 75px 0; }
     .home .container {
       padding: 0 55px; } }
+  @media screen and (max-width: 420px) {
+    .home .container {
+      padding: 0 15px; } }
   .home a {
     margin-top: 42px;
     display: inline-block;
@@ -151,11 +156,13 @@ nav a {
       width: 40px;
       height: 40px; }
 
+@media screen and (max-width: 1000px) {
+  .home {
+    padding-top: 81px; } }
 .about {
   padding: 149px 0 151px 0; }
   .about .container {
     position: relative;
-    height: 700px;
     display: flex;
     justify-content: flex-end;
     align-items: center; }
@@ -196,6 +203,9 @@ nav a {
     background-color: #fff;
     position: relative;
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 600px) {
+    .about .about-text {
+      padding: 20px 20px; } }
   .about .numbers {
     font-family: Poppins-Bold, sans-serif;
     font-size: 275px;
@@ -222,6 +232,9 @@ nav a {
     position: relative;
     z-index: +1; }
 
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 50px 0 50px 0; } }
 .services {
   background-color: #f7f7f7;
   padding: 145px 0 150px;

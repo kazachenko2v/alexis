@@ -182,13 +182,21 @@ nav {
             color: #fff;
             line-height: 85px;
         }
+        @media screen and (max-width: 1000px) {
+            h2 {
+                font-size: 40px;
+                line-height: 55px;
+            }
+        }
     }
     @media screen and (max-width: 1000px) {
-        .home {
-            padding: 81px 0 75px 0;
-        }
         .container {
             padding: 0 55px;
+        }
+    }
+    @media screen and (max-width: 420px) {
+        .container {
+            padding: 0 15px;
         }
     }
     a {
@@ -248,15 +256,18 @@ nav {
             height: 40px;
         }
     }
-}   
-
+}
+@media screen and (max-width: 1000px) {
+    .home {
+        padding-top: 81px;
+    }  
+}
 // about
 
 .about {
     padding: 149px 0 151px 0;
     .container {
         position: relative;
-        height: 700px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -297,6 +308,11 @@ nav {
         position: relative;
         box-shadow: $shadow;
     }
+    @media screen and (max-width: 600px) {
+        .about-text {
+            padding: 20px 20px;
+        }
+    }
     .numbers {
         @include numbers;
         color: #f6f6f6;
@@ -316,6 +332,11 @@ nav {
         margin-bottom: 25px;
         position: relative;
         z-index: +1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about {
+        padding: 50px 0 50px 0;
     }
 }
 
