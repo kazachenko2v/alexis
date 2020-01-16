@@ -637,7 +637,7 @@ nav {
             height: 21%;
             transition: .5s; 
             visibility: visible;
-            z-index: 5;
+            z-index: 10;
         }
         .paragraph::after {
             @include color-bottom-border;
