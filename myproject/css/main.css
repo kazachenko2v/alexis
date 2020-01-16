@@ -1400,7 +1400,6 @@ nav a {
     .subscription form {
       width: 100%; }
     .subscription input {
-      padding-left: 0;
       text-align: center; }
     .subscription button {
       display: block;
