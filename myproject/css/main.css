@@ -491,7 +491,7 @@ nav a {
       height: 21%;
       transition: .5s;
       visibility: visible;
-      z-index: 5; }
+      z-index: 10; }
     .grid-container-portfolio .grid-element-portfolio:hover .paragraph::after {
       content: '';
       display: block;
