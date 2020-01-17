@@ -3,7 +3,7 @@
 a {
   text-decoration: none; }
 
-.container {
+body .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
@@ -63,7 +63,8 @@ nav a {
 @media screen and (max-width: 800px) {
   nav {
     position: absolute;
-    top: -300px; }
+    top: -300px;
+    display: none; }
     nav ul {
       display: block;
       background-color: #fff;
@@ -78,6 +79,7 @@ nav a {
     display: inline-block; }
 
   .nav-column {
+    display: inline-block;
     top: 75px;
     right: 0;
     transition-duration: .5s; } }
@@ -357,9 +359,9 @@ nav a {
   @media screen and (max-width: 500px) {
     .video .play-button::before {
       color: #fff;
-      width: 390px;
+      width: 320px;
       top: -120%;
-      left: -159%; } }
+      left: -125%; } }
   .video .play-button::after {
     content: 'Click to play the video';
     position: absolute;
@@ -922,7 +924,11 @@ nav a {
       margin-bottom: 36px; }
   @media screen and (max-width: 500px) {
     .pricing .price-section {
-      padding: 20px; } }
+      padding: 20px; }
+    .pricing .slick-prev {
+      left: -5px; }
+    .pricing .slick-next {
+      right: -5px; } }
   @media screen and (max-width: 370px) {
     .pricing .price-section {
       padding: 20px 0; } }
