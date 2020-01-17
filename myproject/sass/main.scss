@@ -138,13 +138,12 @@ nav {
 @media screen and (max-width: 800px) {
     nav {
         position: absolute;
-        top: -300px;
         display: none;
         ul {
             display: block;
             background-color: #fff;
-            width: 124px;
-            height: 230px;
+            width: 80vw;
+            height: 100vh;
         }
         li {
             display: block;
@@ -159,9 +158,8 @@ nav {
     }
     .nav-column {
         display: inline-block;
-        top: 75px;
         right: 0;
-        transition-duration: .5s;
+        top: 75px;
     }
 }
 
@@ -1681,6 +1679,7 @@ nav {
         }
         input {
             text-align: center;
+            padding-left: 0;
         }
         button {
             display: block;

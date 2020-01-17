@@ -63,13 +63,12 @@ nav a {
 @media screen and (max-width: 800px) {
   nav {
     position: absolute;
-    top: -300px;
     display: none; }
     nav ul {
       display: block;
       background-color: #fff;
-      width: 124px;
-      height: 230px; }
+      width: 80vw;
+      height: 100vh; }
     nav li {
       display: block;
       margin: 0 10px 10px 21px;
@@ -80,9 +79,8 @@ nav a {
 
   .nav-column {
     display: inline-block;
-    top: 75px;
     right: 0;
-    transition-duration: .5s; } }
+    top: 75px; } }
 .home {
   background: url(../media/home/bg-home.jpg) center/cover no-repeat;
   background-color: rgba(63, 64, 73, 0.85);
@@ -1406,7 +1404,8 @@ nav a {
     .subscription form {
       width: 100%; }
     .subscription input {
-      text-align: center; }
+      text-align: center;
+      padding-left: 0; }
     .subscription button {
       display: block;
       margin: 20px auto 0 auto;
