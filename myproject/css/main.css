@@ -50,37 +50,45 @@ nav a {
   font-size: 14px;
   color: #000; }
 
+.shadow {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0; }
+
 @media screen and (max-width: 800px) {
   nav {
-    position: absolute;
-    display: none; }
+    display: inline-block;
+    position: fixed;
+    z-index: 20;
+    top: 75px;
+    right: -250px;
+    transition: .25s; }
     nav ul {
       display: block;
       background-color: #fff;
-      width: 80vw;
-      height: 100vh; }
-    nav li {
+      width: 250px; }
+    nav a {
       display: block;
-      margin: 0 10px 10px 21px;
-      box-sizing: border-box; }
-
-  nav::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: -20vw;
-    width: 20vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); }
+      padding: 10px 20px;
+      font-size: 24px; }
 
   header svg {
     display: inline-block; }
 
   .nav-column {
-    display: inline-block;
     right: 0;
-    top: 75px; } }
+    transition: .25s; }
+
+  .shadow-visible {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: opacity .5s; } }
 .home {
   background: url(../media/home/bg-home.jpg) center/cover no-repeat;
   background-color: rgba(63, 64, 73, 0.85);

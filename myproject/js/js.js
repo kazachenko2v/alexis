@@ -1,11 +1,18 @@
 // header
 
-var btn = document.getElementsByClassName('nav-button');
-var par = document.getElementsByClassName('nav');
+let btn = document.getElementsByClassName('nav-button');
+let par = document.getElementsByClassName('nav');
+let shadow = document.getElementsByClassName('shadow');
+
 btn[0].onclick = function() {
   par[0].classList.toggle("nav-column");
+  shadow[0].classList.toggle("shadow-visible");
 }
 
+shadow[0].onclick = function() {
+  par[0].classList.toggle("nav-column");
+  shadow[0].classList.toggle("shadow-visible");
+}
 
 // navigation
 
