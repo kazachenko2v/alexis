@@ -90,7 +90,29 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    responsive: [
+      {
+        breakpoint: 1250,
+        settings: {
+          centerMode: true,
+          arrows: true,
+          fade: false,
+          slidesToShow: 3,
+          centerPadding: '0',
+        }
+      },
+      {
+        breakpoint: 701,
+        settings: {
+          centerMode: true,
+          arrows: true,
+          fade: false,
+          slidesToShow: 1,
+          centerPadding: '0',
+        }
+      }
+    ]
 });
 $('.slider-nav').slick({
   slidesToShow: 1,
@@ -105,41 +127,50 @@ $('.slider-nav').slick({
 
 // team
 
-$('.slider-details').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.slider-members'
+var Triggers = document.querySelectorAll('.members'),
+    Contents = document.querySelectorAll('.details');
+Triggers.forEach(function(trigger) {
+   trigger.addEventListener('click', function() {
+      var id = this.getAttribute('data-tab'),
+          content = document.querySelector('.details[data-tab="'+id+'"]'),
+          activeTrigger = document.querySelector('.members.active'),
+          activeContent = document.querySelector('.details.active');
+      
+      activeTrigger.classList.remove('active');
+      trigger.classList.add('active');
+      
+      activeContent.classList.remove('active');
+      content.classList.add('active');
+
+      // slickTrigger = document.querySelector('.members.slick-active');
+      // slickContent = document.querySelector('.members.slick-active');
+   });
 });
+
+// function selectDate(){
+//   if(Triggers.classList.contains('active')) {
+//       return false;
+//   }else{
+//       this.classList.add('active');
+//   }
+// }
+
 $('.slider-members').slick({
+  infinite: false,
   slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.slider-details',
-  arrows: false,
-  dots: false,
-  focusOnSelect: true,
   responsive: [
     {
-      breakpoint: 1170,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: true
-      }
-    },
-    {
-      breakpoint: 879,
+      breakpoint: 1171,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         infinite: true,
         arrows: true
       }
     },
     {
-      breakpoint: 586,
+      breakpoint: 641,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
