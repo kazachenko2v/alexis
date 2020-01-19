@@ -46,7 +46,7 @@ $('.slider-services').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 651,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -142,18 +142,8 @@ Triggers.forEach(function(trigger) {
       activeContent.classList.remove('active');
       content.classList.add('active');
 
-      // slickTrigger = document.querySelector('.members.slick-active');
-      // slickContent = document.querySelector('.members.slick-active');
    });
 });
-
-// function selectDate(){
-//   if(Triggers.classList.contains('active')) {
-//       return false;
-//   }else{
-//       this.classList.add('active');
-//   }
-// }
 
 $('.slider-members').slick({
   infinite: false,

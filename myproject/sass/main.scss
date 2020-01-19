@@ -371,7 +371,7 @@ nav {
     padding: 145px 0 150px;
     position: relative;
     .container {
-        padding: 0;
+        padding: 0 15px;
     }
     .numbers {
         @include numbers;
@@ -392,7 +392,8 @@ nav {
         margin-bottom: 81px;
     }
     .slider-services {
-        // width: 1170px;
+        width: 1170px;
+        margin: 0 auto;
         svg {
             width: 55px;
             height: 50px;
@@ -447,9 +448,15 @@ nav {
         .slider-services {
             width: 586px;
             margin: 0 auto;
+            .slick-prev {
+                left: -20px;
+            }
+            .slick-next {
+                right: -20px;
+            }
         }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
         .slider-services {
             width: 293px;
             margin: 0 auto;
@@ -1920,6 +1927,9 @@ footer {
 @media screen and (max-width: 800px) {
     section[class] {
         padding: 75px 0;
+    }
+    section[class="video"] {
+        padding: 0;
     }
 }
 
