@@ -15,14 +15,14 @@ body {
 }
 
 @mixin button {
-        display: inline-block;
-        font-family: Poppins-SemiBold, sans-serif;
-        font-size: 16px;
-        text-transform: uppercase;
-        color: #fff;
-        background-color: #fc5f45;
-        padding: 18px 42px 16px;
-        border-radius: 25px;
+    display: inline-block;
+    font-family: Poppins-SemiBold, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #fc5f45;
+    padding: 18px 42px 16px;
+    border-radius: 25px;
 }
 
 @mixin section-header {
@@ -758,7 +758,13 @@ nav {
             @include paragraph;
             color: #616161;
             vertical-align: middle;
+            @media screen and (max-width: 450px) {
+                font-size: 10px;
             }
+            @media screen and (max-width: 330px) {
+                font-size: 13px;
+            }
+        }
         svg {
             fill: #616161;
             fill-rule: evenodd;
@@ -781,7 +787,6 @@ nav {
         ul {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             justify-content: space-between;
             border-left: none;
             padding: 0;
@@ -794,7 +799,10 @@ nav {
 }
 .slider-members {
     width: 1170px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
+    .slick-track {
+        height: 399px;
+    }
     .members {
         text-align: center;
         box-sizing: border-box;
@@ -802,6 +810,7 @@ nav {
         padding: 5px;
         box-shadow: $shadow;
         position: relative;
+        height: 349px;
     }
     .image {
         width: 100%;
@@ -869,6 +878,19 @@ nav {
         h4 {
             color: #feb960;
         }
+    }
+    .active::after {
+        content: '';
+        display: inline-block;
+        background-color: #fff;
+        position: absolute;
+        bottom: -55px;
+        left: 50%;
+        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        width: 65px;
+        height: 45px;
+        transform: translateX(-50%);
+        box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
     }
     @media screen and (max-width: 1170px) {
         width: 586px;
@@ -1131,11 +1153,15 @@ nav {
             width: 300px;
         }
     }
+    .slick-list {
+        display: flex;
+    }
     .price-section {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         box-sizing: border-box;
-        height: 575px;
+        height: 100%;
         padding: 33px 88px 38px;
         margin: 0 15px;
         box-shadow: $shadow;
@@ -1148,14 +1174,16 @@ nav {
         b {
             font-weight: bold;
         }
-        span {
-            display: block;
+        ul {
+            margin-bottom: 15px;
+        }
+        li {
             font-family: sans-serif;
             margin-bottom: 24px;
         }
-        span:last-of-type {
-            margin-bottom: 36px;
-        }
+        // span:last-of-type {
+        //     margin-bottom: 36px;
+        // }
     }
     @media screen and (max-width: 500px) {
         .price-section {
@@ -1290,6 +1318,11 @@ nav {
     @include section-header;
     h2, h3 {
         color: #fff;
+    }
+    @media screen and (max-width: 400px) {
+        h2 {
+            font-size: 36px;
+        }
     }
     h3 {
         margin-bottom: 81px;
@@ -1484,6 +1517,11 @@ nav {
     h3 {
         margin-bottom: 66px;
     }
+    @media screen and (max-width: 428px) {
+        h2 {
+            font-size: 36px;
+        }
+    }
     .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -1533,6 +1571,11 @@ nav {
     @media screen and (max-width: 1110px) {
         .flex-container {
             justify-content: space-around;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .flex-container {
+            margin-bottom: 30px;
         }
     }
     h4 {
@@ -1616,13 +1659,18 @@ nav {
         span:first-of-type {  
             font-family: Poppins-Medium, sans-serif;
             font-size: 15px;
-            text-transform: uppercase;       
+            text-transform: uppercase;  
+            vertical-align: middle;     
         }
         span:last-of-type { 
             font-family: Poppins-Regular, sans-serif;
             font-size: 13px;
             vertical-align: middle;
-            margin-left: 28px;     
+            margin-left: 28px;   
+            @media screen and (max-width: 350px) {
+                font-size: 10px;
+            }
+
         }
         h4 {
             @include h4;
@@ -1647,7 +1695,6 @@ nav {
         img {
             width: 100%;
             height: 100%;
-            // object-fit: fill;
             
         }
         div {
@@ -1656,7 +1703,6 @@ nav {
             left: 9%;        
         }
         span:first-of-type {
-            // position: absolute;
             color: #fc6046;
         }
         span:last-of-type {

@@ -129,6 +129,7 @@ $('.slider-nav').slick({
 
 var Triggers = document.querySelectorAll('.members'),
     Contents = document.querySelectorAll('.details');
+
 Triggers.forEach(function(trigger) {
    trigger.addEventListener('click', function() {
       var id = this.getAttribute('data-tab'),
@@ -141,7 +142,6 @@ Triggers.forEach(function(trigger) {
       
       activeContent.classList.remove('active');
       content.classList.add('active');
-
    });
 });
 
