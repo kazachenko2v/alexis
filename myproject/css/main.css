@@ -944,15 +944,17 @@ nav a {
     margin-bottom: 78px; }
   .pricing .slider-price {
     width: 1170px; }
+  .pricing .slick-list {
+    display: flex; }
   @media screen and (max-width: 1200px) {
     .pricing .slider-price {
       width: 400px;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+    .pricing .slick-list {
+      display: block; } }
   @media screen and (max-width: 500px) {
     .pricing .slider-price {
       width: 300px; } }
-  .pricing .slick-list {
-    display: flex; }
   .pricing .price-section {
     display: flex;
     flex-direction: column;
@@ -970,7 +972,8 @@ nav a {
     .pricing .price-section b {
       font-weight: bold; }
     .pricing .price-section ul {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      flex-grow: 100; }
     .pricing .price-section li {
       font-family: sans-serif;
       margin-bottom: 24px; }

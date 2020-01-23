@@ -1142,10 +1142,16 @@ nav {
     .slider-price {
         width: 1170px;
     }
+    .slick-list {
+        display: flex;
+    }
     @media screen and (max-width: 1200px) {
         .slider-price {
             width: 400px;
             margin: 0 auto;
+        }
+        .slick-list {
+            display: block;
         }
     }
     @media screen and (max-width: 500px) {
@@ -1153,9 +1159,7 @@ nav {
             width: 300px;
         }
     }
-    .slick-list {
-        display: flex;
-    }
+    
     .price-section {
         display: flex;
         flex-direction: column;
@@ -1176,6 +1180,7 @@ nav {
         }
         ul {
             margin-bottom: 15px;
+            flex-grow: 100;
         }
         li {
             font-family: sans-serif;
